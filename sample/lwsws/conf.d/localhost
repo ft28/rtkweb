@@ -1,0 +1,37 @@
+{
+  "vhosts": [
+    {
+      "name": "localhost",
+      "port": "7681",
+      "access-log": "/opt/rtkweb/sample/log/test-access-log",
+      "mounts": [
+        {
+          "mountpoint": "/",
+          "origin": "file:///opt/rtkweb/sample/doc/",
+          "default": "hoge.html",
+          "cache-max-age": "60",
+          "cache-reuse": "1",
+          "cache-revalidate": "1",
+          "cache-intermediaries": "0"
+        }
+      ],
+
+      # which protocols are enabled for this vhost, and optional
+      # vhost-specific config options for the protocol
+      #
+      "ws-protocols": [
+        {
+          "test-protocol": {
+            "status": "ok"
+          }
+        },
+        {
+          "rtkweb-protocol": {
+            "status": "ok",
+            "basedir": "/opt/rtkweb/sample"
+          }
+        }
+      ]
+    }
+  ]
+}

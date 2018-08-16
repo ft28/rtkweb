@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  websocket:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        user_id:    ${USER_ID}
+        user_name:  ${USER_NAME}
+        group_id:   ${GROUP_ID}
+        group_name: ${GROUP_NAME}
+
+    volumes:
+      - ./:/opt/rtkweb
+    ports:
+      - "7681:7681"

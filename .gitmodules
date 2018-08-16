@@ -1,0 +1,6 @@
+[submodule "libwebsockets"]
+	path = libwebsockets
+	url = https://github.com/warmcat/libwebsockets.git
+[submodule "RTKLIB"]
+	path = RTKLIB
+	url = https://github.com/tomojitakasu/RTKLIB.git

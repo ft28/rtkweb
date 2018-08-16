@@ -1,0 +1,6 @@
+*~
+build
+plugins/libprotocol_rtkweb.so
+log
+*.trace
+*.nav

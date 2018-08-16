@@ -1,0 +1,48 @@
+#main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table th {
+  text-align: left;
+}
+
+div.status table td {
+  padding-left: 20px;
+}
+
+div.status table td button {
+  margin-left: 20px;
+}
+
+div.observation table {
+  border-collapse: collapse;
+  font-size: 80%;
+}
+
+div.observation table th {
+  background-color: #cccccc; 
+  border: solid 1px #aaaaaa;
+}
+
+div.observation table td {
+  text-align: right;
+  border: solid 1px #aaaaaa;
+}
+
+div.satellite table {
+  border-collapse: collapse;
+  border: solid 1px #aaaaaa;
+  font-size: 80%;
+}
+
+div.satellite table th {
+  background-color: #cccccc; 
+  border: solid 1px #aaaaaa;
+}
+
+div.satellite table td {
+  text-align: right;
+  border: solid 1px #aaaaaa;
+}
