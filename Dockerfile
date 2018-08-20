@@ -22,7 +22,7 @@ RUN  mkdir /opt/rtkweb  && \
      adduser  --gid ${group_id} --uid ${user_id} ${user_name} && \
      chown -R ${user_name}:${gropu_name} /opt/rtkweb
 
-# USER ${user_name}
+USER ${user_name}
 WORKDIR /opt/rtkweb
 
 CMD ["/bin/bash"]
